@@ -1,22 +1,15 @@
-<div>test test</div>
+<div class="m-5">
+  <nav class="nav nav-pills m-3" id="pills-tab" role="tablist">
+    <a class="nav-link" routerLinkActive="active" routerLink="/home">Home</a>
+    <a class="nav-link" routerLinkActive="active" routerLink="/upload-image"
+      >Upload Area</a
+    >
+    <a class="nav-link" routerLinkActive="active" routerLink="/view-photos"
+      >Photos Area</a
+    >
+  </nav>
 
-<div class="bg-primary">2nd test</div>
-
-<div class="dropdown m-3">
-  <button
-    class="btn btn-primary dropdown-toggle"
-    type="button"
-    id="dropdownMenuButton"
-    data-bs-toggle="dropdown"
-    aria-expanded="false"
-  >
-    Dropdown button
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
+  <div class="m-3">
+    <router-outlet></router-outlet>
+  </div>
 </div>
-
-<button mat-button class="m-3">Hello world!</button>
