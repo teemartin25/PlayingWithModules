@@ -4,6 +4,16 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  {
+    path: 'upload-image',
+    loadChildren: () =>
+      import('./upload-area/upload.module').then((m) => m.UploadModule),
+  },
+  {
+    path: 'view-photos',
+    loadChildren: () =>
+      import('./photos-area/photos.module').then((m) => m.PhotosModule),
+  },
   { path: 'home', component: HomeComponent },
 ];
 

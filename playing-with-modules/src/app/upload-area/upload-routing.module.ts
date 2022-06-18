@@ -4,9 +4,7 @@ import { UploadImagesComponent } from './upload-images/upload-images.component';
 
 @NgModule({
   imports: [
-    RouterModule.forChild([
-      { path: 'upload-image', component: UploadImagesComponent },
-    ]),
+    RouterModule.forChild([{ path: '', component: UploadImagesComponent }]),
   ],
   exports: [RouterModule],
 })

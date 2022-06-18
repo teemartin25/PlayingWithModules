@@ -5,8 +5,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './material/material.module';
-import { UploadModule } from './upload-area/upload.module';
-import { PhotosModule } from './photos-area/photos.module';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
@@ -16,8 +14,6 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    UploadModule,
-    PhotosModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

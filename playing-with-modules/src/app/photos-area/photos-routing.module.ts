@@ -5,7 +5,7 @@ import { PhotosComponent } from './photos/photos.component';
 @NgModule({
   imports: [
     RouterModule.forChild([
-      { path: 'view-photos', component: PhotosComponent },
+      { path: '', component: PhotosComponent },
       { path: '**', redirectTo: '/home' },
     ]),
   ],
