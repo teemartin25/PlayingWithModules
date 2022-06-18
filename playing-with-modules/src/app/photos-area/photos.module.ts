@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { PhotosComponent } from './photos/photos.component';
-import { MaterialModule } from '../material/material.module';
 import { PhotosRoutingModule } from './photos-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [PhotosComponent],
-  imports: [CommonModule, MaterialModule, PhotosRoutingModule],
-  exports: [PhotosComponent],
+  imports: [PhotosRoutingModule, SharedModule],
+  exports: [PhotosComponent], // I don't remember why I put this here. But this probably can be removed
 })
 export class PhotosModule {}

@@ -6,7 +6,6 @@ import { PhotosComponent } from './photos/photos.component';
   imports: [
     RouterModule.forChild([
       { path: '', component: PhotosComponent },
-      { path: '**', redirectTo: '/home' },
     ]),
   ],
   exports: [RouterModule],

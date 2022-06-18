@@ -1,18 +1,12 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { UploadImagesComponent } from './upload-images/upload-images.component';
-import { MaterialModule } from '../material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UploadRoutingModule } from './upload-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [UploadImagesComponent],
-  imports: [
-    CommonModule,
-    MaterialModule,
-    ReactiveFormsModule,
-    UploadRoutingModule,
-  ],
-  exports: [UploadImagesComponent],
+  imports: [ReactiveFormsModule, UploadRoutingModule, SharedModule],
+  exports: [UploadImagesComponent], // I don't remember why I put this here. But this probably can be removed
 })
 export class UploadModule {}
