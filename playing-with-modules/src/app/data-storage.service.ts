@@ -47,8 +47,4 @@ export class DataStorageService {
     console.log(this.profiles);
     this.profiles.push(addedProfile);
   }
-
-  deleteProfile(profile: Profile) {
-    this.profiles = this.profiles.filter((p) => p !== profile);
-  }
 }
