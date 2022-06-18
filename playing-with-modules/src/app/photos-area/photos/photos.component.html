@@ -1,1 +1,25 @@
 <p>photos works!</p>
+<div class="row">
+  <ng-container *ngFor="let profile of profiles">
+    <div class="col-sm-2">
+      <mat-card class="example-card border border-4 border-secondary p-4">
+        <mat-card-header>
+          <mat-card-title>{{ profile.name }}</mat-card-title>
+          <mat-card-subtitle>{{ profile.email }}</mat-card-subtitle>
+        </mat-card-header>
+        <img
+          class="mx-auto mt-3"
+          style="
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+            overflow: hidden;
+          "
+          mat-card-image
+          src="{{ profile.imageUrl }}"
+          alt="profile photo here"
+        />
+      </mat-card>
+    </div>
+  </ng-container>
+</div>

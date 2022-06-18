@@ -1,1 +1,13 @@
-<p>home works!</p>
+<div class="fs-3">List of Profiles</div>
+
+<div class="row gap-3">
+  <ng-container *ngFor="let profile of profiles">
+    <div class="card col-sm-3">
+      <div class="card-body">
+        <h5 class="card-title">{{ profile.name }}</h5>
+        <p class="card-text">{{ profile.email }}</p>
+      </div>
+      <div class="card-footer text-muted">{{ profile.birthdate | date }}</div>
+    </div>
+  </ng-container>
+</div>
