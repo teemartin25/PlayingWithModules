@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     RouterModule.forChild([
       { path: 'view-photos', component: PhotosComponent },
+      { path: '**', redirectTo: '/home' },
     ]),
   ],
   exports: [PhotosComponent],
