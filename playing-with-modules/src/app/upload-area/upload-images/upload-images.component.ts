@@ -24,7 +24,7 @@ export class UploadImagesComponent implements OnInit {
 
   onSubmit() {
     console.log(this.createProfileForm.value.name);
-    this.dataStorageService.addToProfile(
+    this.dataStorageService.addProfile(
       this.createProfileForm.value.name,
       this.createProfileForm.value.email,
       this.createProfileForm.value.gender,

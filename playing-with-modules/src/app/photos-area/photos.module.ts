@@ -1,19 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PhotosComponent } from './photos/photos.component';
-import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
+import { PhotosRoutingModule } from './photos-routing.module';
 
 @NgModule({
   declarations: [PhotosComponent],
-  imports: [
-    CommonModule,
-    MaterialModule,
-    RouterModule.forChild([
-      { path: 'view-photos', component: PhotosComponent },
-      { path: '**', redirectTo: '/home' },
-    ]),
-  ],
+  imports: [CommonModule, MaterialModule, PhotosRoutingModule],
   exports: [PhotosComponent],
 })
 export class PhotosModule {}
